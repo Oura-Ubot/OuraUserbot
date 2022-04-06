@@ -1,6 +1,6 @@
 # Credits: @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# ReCode by @Pocongonlen
+# ReCode by @Owaitingforyou
 import asyncio
 import importlib
 import logging
@@ -32,10 +32,10 @@ else:
 
 async def autopilot():
     LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
-    desc = "Group Logs untuk PocongUserBot.\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @PocongProject"
+    desc = "Group Logs untuk OuraUserBot.\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✨ Powered By ~ @OuraaProject"
     try:
         grup = await bot(
-            CreateChannelRequest(title="BOT [ JGN DI HAPUS ]", about=desc, megagroup=True)
+            CreateChannelRequest(title="GROUP BOT [ JGN DI DELETE ]", about=desc, megagroup=True)
         )
         grup_id = grup.chats[0].id
     except Exception as e:
@@ -121,7 +121,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"🤖 Owner ~ {who.first_name} \n🔥 Powered By ~ @PoconProject"
+                bf, f"🤖 Owner ~ {who.first_name} \n🔥 Powered By ~ @OuraaProject"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -163,7 +163,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"🤖 Owner ~ {who.first_name} \n🔥 Powered By ~ @PocongProject"
+            bf, f"🤖 Owner ~ {who.first_name} \n🔥 Powered By ~ @OuraaProject"
         )
         await bot.send_message(
             BOTLOG_CHATID,
