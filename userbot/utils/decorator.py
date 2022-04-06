@@ -15,7 +15,6 @@ from userbot import (
     CMD_LIST,
     LOAD_PLUG,
     SUDO_HANDLER,
-    POCONG_HANDLER,
     SUDO_USERS,
     bot,
     tgbot,
