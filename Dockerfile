@@ -1,4 +1,4 @@
-FROM ouraaekontot/ourauserbot:buster
+FROM owaitingforyou/ourauserbot:buster
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
     apt-get install -y nodejs && \
