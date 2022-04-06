@@ -12,8 +12,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 # copyright (C) mrismanaziz
-# PocongUserbot < https://github.com/poocong/PocongUserbot >
-# ReCode @pocongonlen
+# OuraUserbot < https://github.com/Oura-Ubot/OuraUserbot >
+# ReCode @Owaitingforyou
 
 
 import asyncio
