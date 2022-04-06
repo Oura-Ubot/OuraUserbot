@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2021 TeamUltroid for autobot
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# ReCode by @Pocongonlen
+# ReCode by @Owaitingforyou
 
 """ Userbot start point """
 
@@ -26,11 +26,11 @@ try:
     call_py.start()
     user = bot.get_me()
     blacklist = requests.get(
-        "https://raw.githubusercontent.com/poocong/darkweeb/master/blacklist.json"
+        "https://raw.githubusercontent.com/Oura-Ubot/darkweeb/master/blacklist.json"
     ).json()
     if user.id in blacklist:
         LOGS.warning(
-            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJISS BET DIPAKE BOCIL KEK LU.\nCredits: @Pocongonlen"
+            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTNYA GUA MATIIN NAJISS BET DIPAKE BOCIL KEK LU.\nCredits: @Owaitingforyou"
         )
         sys.exit(1)
 except Exception as e:
@@ -41,10 +41,10 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/PocongUserbot"
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/OuraaSupport"
 )
 
-LOGS.info(f"PocongUserbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+LOGS.info(f"OuraUserbot ⚙️ V{BOT_VER} [🐣 BERHASIL DIAKTIFKAN! 🐣]")
 
 if not BOTLOG_CHATID:
     LOGS.info(
@@ -52,17 +52,17 @@ if not BOTLOG_CHATID:
     )
     bot.loop.run_until_complete(autopilot())
 
-async def pocong_userbot_on():
+async def oura_userbot_on():
     try:
         if BOTLOG_CHATID != 0:
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"🔥 **PocongUserbot Berhasil Di Aktifkan**\n━━\n➠ **Userbot Version -** `{BOT_VER}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
+                f"🐣 **OuraUserbot Berhasil Di Aktifkan**\n━━\n➠ **Userbot Version -** `{BOT_VER}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
             )
     except Exception as e:
         LOGS.info(str(e))
     try:
-        await bot(JoinChannelRequest("@PocongProject"))
+        await bot(JoinChannelRequest("@OuraaProject"))
     except BaseException:
         pass
     try:
@@ -70,14 +70,14 @@ async def pocong_userbot_on():
     except BaseException:
         pass
     try:
-        await bot(JoinChannelRequest("@Poconguserbot"))
+        await bot(JoinChannelRequest("@OuraaSupport"))
     except BaseException:
         pass
     
 
 
 bot.loop.run_until_complete(checking())
-bot.loop.run_until_complete(pocong_userbot_on())
+bot.loop.run_until_complete(oura_userbot_on())
 if not BOT_TOKEN:
     bot.loop.run_until_complete(autobot())
 idle()
