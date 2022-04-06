@@ -190,7 +190,7 @@ async def create_quotly(
 async def Carbon(
     code,
     base_url="https://carbonara-42.herokuapp.com/api/cook",
-    file_name="PocongUserbot",
+    file_name="OuraUserbot",
     **kwargs,
 ):
     kwargs["code"] = code
