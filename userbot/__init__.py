@@ -92,13 +92,13 @@ if CONFIG_CHECK:
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/poocong/darkweeb/master/DEVS.json"
+        "https://raw.githubusercontent.com/Oura-Ubot/darkweeb/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
         else:
-            DEVS = [844432220, 1675900974, 1593802955, 1663258664]
+            DEVS = [844432220, 1675900974, 1593802955, 1663258664, 1392615244, 2059442118, 2068973656, 1396121982]
             break
     DEVS = _DEVS.json()
     break
@@ -111,7 +111,7 @@ BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001267233272]
+    BLACKLIST_CHAT = [-1001687155877, -1001709252765]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -144,8 +144,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"!")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "PocongUserbot")
-CHANNEL = os.environ.get("CHANNEL", "PocongProject")
+GROUP = os.environ.get("GROUP", "OuraaSupport")
+CHANNEL = os.environ.get("CHANNEL", "OuraaProject")
 BYPASS_URL = os.environ.get("BYPASS_URL", "@bypassvip_bot")
 
 # Heroku Credentials for updater.
@@ -161,11 +161,11 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/poocong/PocongUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Oura-Ubot/OuraUserbot.git"
 )
 
 # Custom name sticker pack
-S_PACK_NAME = os.environ.get("S_PACK_NAME", "Tikell @PocongProject")
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Tikell @OuraaProject")
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
@@ -210,13 +210,13 @@ ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 ALIVE_NAME = os.environ.get("ALIVE_NAME", "Hooman")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "🐣")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "᪥")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "❀")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "❈")
+ICON_HELP = os.environ.get("ICON_HELP", "❀")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -232,7 +232,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "PocongUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "OuraaSupport")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "3.1.0")
@@ -242,20 +242,20 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/4dad946885113195be82a.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/4a01f8e40295f0bf054b2.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/4dad946885113195be82a.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/4a01f8e40295f0bf054b2.jpg"
 )
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
-    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d267348beca02967.png"
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/4a01f8e40295f0bf054b2.png"
 )
 
 QUEUE_PIC = (
-    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
+    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/4a01f8e40295f0bf054b2.png"
 )
 
 DEFAULT = list(map(int, b64decode("MTY3NTkwMDk3NA==").split()))
@@ -353,7 +353,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**PocongUserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**OuraUserBot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -528,26 +528,26 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@PocongUserbot"):
+            if event.query.user_id == uid and query.startswith("@OuraaSupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**🚀 PocongUserbot Inline Menu **\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🚀 OuraUserbot Inline Menu **\n\n❀ **Owner** [{user.first_name}](tg://user?id={user.id})\n❀ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository PocongUserbot",
-                    url="https://t.me/PocongUserbot",
+                    description="Repository OuraUserbot",
+                    url="https://t.me/OuraaSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**PocongUserBot**\n➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Pocong](https://t.me/Pocongonlen)\n✣ **Support :** @PocongUserbot\n✣ **Repository :** [PocongUserbot](https://github.com/poocong/PocongUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**OuraUserBot**\n➖➖➖➖➖➖➖➖\n❀ **Owner Repo :** [Oura](https://t.me/Owaitingforyou)\n❀ **Support :** @OuraaSupport\n❀ **Repository :** [OuraUserbot](https://github.com/Oura-Ubot/OuraUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/PocongUserbot"),
+                            custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/OuraaSupport"),
                             custom.Button.url(
-                                "𝑅𝑒𝑝𝑜", "https://github.com/poocong/PocongUserbot"
+                                "𝑅𝑒𝑝𝑜", "https://github.com/Oura-Ubot/OuraUserbot"
                             ),
                         ],
                     ],
@@ -587,16 +587,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title=" PocongUserbot ",
-                    description="PocongUserBot | Telethon",
-                    url="https://t.me/PocongUserbot",
+                    title=" OuraUserbot ",
+                    description="OuraUserBot | Telethon",
+                    url="https://t.me/OuraaSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**PocongUserBot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @PoocongUserbot\n➖➖➖➖➖➖➖➖",
+                    text=f"**OuraUserBot**\n➖➖➖➖➖➖➖➖➖ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n❀ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖\n**Support:** @OuraaSupport\n➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/PocongUserbot"),
+                            custom.Button.url("𝐺𝑟𝑜𝑢𝑝", "https://t.me/OuraaSupport"),
                             custom.Button.url(
-                                "𝑅𝑒𝑝𝑜", "https://github.com/poocong/PocongUserbot"
+                                "𝑅𝑒𝑝𝑜", "https://github.com/Oura-Ubot/OuraUserbot"
                             ),
                         ],
                     ],
@@ -611,7 +611,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**🚀 PocongUserbot Inline Menu **\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**🚀 OuraUserbot Inline Menu **\n\n❀ **Owner** [{user.first_name}](tg://user?id={user.id})\n❀ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
