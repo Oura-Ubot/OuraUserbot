@@ -1,13 +1,13 @@
-FROM poocongonlen/poconguserbot:buster
+FROM ouraaekontot/ourauserbot:buster
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
     apt-get install -y nodejs && \
     npm i -g npm
 
-RUN git clone -b main https://github.com/poocong/PocongUserbot /home/poconguserbot/ \
-    && chmod 777 /home/poconguserbot \
-    && mkdir /home/poconguserbot/bin/
+RUN git clone -b main https://github.com/Oura-Ubot/OuraUserbot /home/ourauserbot/ \
+    && chmod 777 /home/ourauserbot \
+    && mkdir /home/ourauserbot/bin/
 
-WORKDIR /home/poconguserbot/
+WORKDIR /home/ourauserbot/
 
 CMD [ "bash", "start" ]
