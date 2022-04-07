@@ -19,7 +19,7 @@ from telethon import events
 from userbot import CMD_HANDLER, CMD_LIST, DEFAULT, bot
 
 
-def oura_cmd(pattern=None, command=None, **args):
+def poci_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -188,8 +188,8 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**!!! OURAUSERBOT ERROR REPOR !!!**\n\n"
-                    link = "[Group Support](https://t.me/OuraaSupport)"
+                    text = "**!!! POCONGUSERBOT ERROR REPOR !!!**\n\n"
+                    link = "[Group Support](https://t.me/PocongUserbot)"
                     text += "Jika mau, Anda bisa melaporkan error ini, "
                     text += f"Cukup forward saja pesan ini ke {link}.\n\n"
 
@@ -198,7 +198,7 @@ def register(**args):
                     ftext += "\nkami hanya mencatat fakta error dan tanggal,"
                     ftext += "\nkami menghormati privasi Anda."
                     ftext += "\nJika mau, Anda bisa melaporkan error ini,"
-                    ftext += "\ncukup forward saja pesan ini ke @OuraaSupport"
+                    ftext += "\ncukup forward saja pesan ini ke @PocongUserbot"
                     ftext += "\n================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
                     ftext += "\nTanggal : " + date
