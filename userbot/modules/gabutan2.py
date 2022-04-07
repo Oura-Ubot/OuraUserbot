@@ -215,7 +215,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "war": f"**Plugin : **`war`\
+        "gabutan2": f"**Plugin : **`gabutan2`\
         \n\n  •  **Syntax :** `{cmd}jamet`\
         \n  •  **Function : **Menghina Jamet telegram\
         \n\n  •  **Syntax :** `{cmd}pp`\
