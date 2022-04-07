@@ -52,7 +52,7 @@ async def _(event):
         
 CMD_HELP.update(
     {
-        "animasi6": f"**Plugin : **`animasi6`\
+        "animasi2": f"**Plugin : **`animasi2`\
         \n\n  •  **Syntax :** `{cmd}virus`\
         \n  •  **Function : **Mengirim Gambar Virus.\
     "
