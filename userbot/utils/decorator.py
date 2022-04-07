@@ -1,7 +1,7 @@
 # Credits: @mrconfused
 # Ported by @mrismanaziz
 # FROM Man-Userbot
-# ReC0de by @Owaitingforyou
+# ReC0de by @Pocongonlen
 
 import inspect
 import re
@@ -45,26 +45,26 @@ def poci_cmd(
         args["chats"] = black_list_chats
 
     if pattern is not None:
-        global oura_reg
+        global poci_reg
         global sudo_reg
-        global eko_reg
+        global tuyul_reg
         if (
             pattern.startswith(r"\#")
             or not pattern.startswith(r"\#")
             and pattern.startswith(r"^")
         ):
-            oura_reg = sudo_reg = eko_reg = re.compile(pattern)
+            poci_reg = sudo_reg = tuyul_req = re.compile(pattern)
         else:
-            oura_ = "\\" + CMD_HANDLER
+            poci_ = "\\" + CMD_HANDLER
             sudo_ = "\\" + SUDO_HANDLER
-            oura_reg = re.compile(poci_ + pattern)
+            poci_reg = re.compile(poci_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
-                cmd1 = oura_ + command
+                cmd1 = poci_ + command
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
-                    (oura_ + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                    (poci_ + pattern).replace("$", "").replace("\\", "").replace("^", "")
                 )
                 cmd2 = (
                     (sudo_ + pattern)
@@ -108,7 +108,7 @@ def poci_cmd(
     return decorator
 
 
-def oura_handler(
+def pocong_handler(
     **args,
 ):
     def decorator(func):
