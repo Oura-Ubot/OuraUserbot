@@ -43,11 +43,11 @@ async def start_voice(c):
     creator = chat.creator
 
     if not admin and not creator:
-        await edit_delete(c, f"**Maaf {me.first_name} Bukan Admin 👮**")
+        await edit_delete(c, f"**Tololl {me.first_name} Lu Bukan Admin Tod.👮**")
         return
     try:
         await c.client(startvc(c.chat_id))
-        await edit_or_reply(c, "`Voice Chat Started...`")
+        await edit_or_reply(c, "`Gudang Dosa Telah Di Buka...`")
     except Exception as ex:
         await edit_delete(c, f"**ERROR:** `{ex}`")
 
@@ -60,18 +60,18 @@ async def stop_voice(c):
     creator = chat.creator
 
     if not admin and not creator:
-        await edit_delete(c, f"**Maaf {me.first_name} Bukan Admin 👮**")
+        await edit_delete(c, f"**Tololl {me.first_name} Lu Bukan Admin Tod.👮**")
         return
     try:
         await c.client(stopvc(await get_call(c)))
-        await edit_or_reply(c, "`Voice Chat Stopped...`")
+        await edit_or_reply(c, "`Gudang Dosa Di tutup! Silahkan Tobat..`")
     except Exception as ex:
         await edit_delete(c, f"**ERROR:** `{ex}`")
 
 
 @poci_cmd(pattern="vcinvite")
 async def _(c):
-    xxnx = await edit_or_reply(c, "`Inviting Members to Voice Chat...`")
+    xxnx = await edit_or_reply(c, "`Mengajak Anak Shaleh Untuk Berbuat Dosa...`")
     users = []
     z = 0
     async for x in c.client.iter_participants(c.chat_id):
@@ -84,7 +84,7 @@ async def _(c):
             z += 6
         except BaseException:
             pass
-    await xxnx.edit(f"`{z}` **Orang Berhasil diundang ke VCG**")
+    await xxnx.edit(f"`{z}` **Anak Shaleh Berhasil diundang ke VCS**")
 
 
 @poci_cmd(pattern="vctitle(?: |$)(.*)")
@@ -99,18 +99,18 @@ async def change_title(e):
         return await edit_delete(e, "**Silahkan Masukan Title Obrolan Suara Grup**")
 
     if not admin and not creator:
-        await edit_delete(e, f"**Maaf {me.first_name} Bukan Admin 👮**")
+        await edit_delete(e, f"**Tololl {me.first_name} Lu Bukan Admin Tod.👮**")
         return
     try:
         await e.client(settitle(call=await get_call(e), title=title.strip()))
-        await edit_or_reply(e, f"**Berhasil Mengubah Judul VCG Menjadi** `{title}`")
+        await edit_or_reply(e, f"**Berhasil Mengubah Judul VCS Menjadi** `{title}`")
     except Exception as ex:
         await edit_delete(e, f"**ERROR:** `{ex}`")
 
 
 @poci_cmd(pattern="joinvc(?: |$)(.*)")
 async def _(event):
-    Pocong = await edit_or_reply(event, "`Processing...`")
+    Pocong = await edit_or_reply(event, "`Ikutan VCS...`")
     if len(event.text.split()) > 1:
         chat_id = event.text.split()[1]
         try:
@@ -132,13 +132,13 @@ async def _(event):
                 stream_type=StreamType().local_stream,
             )
             await Pocong.edit(
-                f"❏ **Berhasil Join Ke Obrolan Suara**\n└ **Chat ID:** `{chat_id}`"
+                f"❀ **Berhasil Join Ke Gudang Dosa**\n└ **Chat ID:** `{chat_id}`"
             )
         except AlreadyJoinedError:
             await call_py.leave_group_call(chat_id)
             await edit_delete(
                 Pocong,
-                "**ERROR:** `Karena akun sedang berada di obrolan suara`\n\n• Silahkan coba `.joinvc` lagi",
+                "**ERROR:** `Karena akun sedang berada di Gudang Dosa`\n\n• Silahkan coba `.joinvc` lagi",
                 45,
             )
         except Exception as e:
@@ -147,7 +147,7 @@ async def _(event):
 
 @poci_cmd(pattern="leavevc(?: |$)(.*)")
 async def vc_end(event):
-    Pocong = await edit_or_reply(event, "`Processing...`")
+    Pocong = await edit_or_reply(event, "`Proses Tobat...`")
     if len(event.text.split()) > 1:
         chat_id = event.text.split()[1]
         try:
@@ -161,7 +161,7 @@ async def vc_end(event):
             await call_py.leave_group_call(chat_id)
             await edit_delete(
                 Pocong,
-                f"❏ **Berhasil Turun dari Obrolan Suara**\n└ **Chat ID:** `{chat_id}`",
+                f"❀ **Berhasil Tobat dari Gudang Dosa**\n└ **Chat ID:** `{chat_id}`",
             )
         except Exception as e:
             await Pocong.edit(f"**INFO:** `{e}`")
