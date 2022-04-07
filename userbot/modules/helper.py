@@ -8,11 +8,11 @@ from userbot.utils import edit_or_reply, poci_cmd
 async def usit(event):
     await edit_or_reply(
         event,
-        f"**Hai {owner} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
-        f"✣ **GroupSupport :** [Grup Support](t.me/poconguserbot)\n"
-        f"✣ **Channel :** [Channel](t.me/PocongProject)\n"
-        f"✣ **OwnerRepo :** [Pocong Onlen](t.me/Pocongonlen)\n"
-        f"✣ **Repo :** [PocongUserbot](https://github.com/poocong/PocongUserbot)\n",
+        f"**Halo {owner} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
+        f"❀ **GroupSupport :** [Grup Support](t.me/OuraaSupport)\n"
+        f"❀ **Channel :** [Channel](t.me/OuraaProject)\n"
+        f"❀ **OwnerRepo :** [Oura Cakep](t.me/Owaitingforyou)\n"
+        f"❀ **Repo :** [OuraUserbot](https://github.com/Oura-Ubot/OuraUserbot)\n",
     )
 
 
@@ -20,7 +20,7 @@ async def usit(event):
 async def var(event):
     await edit_or_reply(
         event,
-        "**Daftar Lengkap Vars Dari PocongUserbotUserbot:** [KLIK DISINI](https://telegra.ph/ㅤ-04-04-5)",
+        "**Daftar Lengkap Vars Dari OuraUserbot:** [KLIK DISINI](https://telegra.ph/ㅤ-04-04-5)",
     )
 
 
