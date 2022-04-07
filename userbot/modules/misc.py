@@ -63,7 +63,7 @@ async def shutdown_bot(event):
             "**#SHUTDOWN** \n"
             "**PocongUserbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**PocongUserbot Berhasil di matikan!**")
+    await edit_or_reply(event, "**OuraUserbot Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -74,10 +74,10 @@ async def shutdown_bot(event):
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
-    await edit_or_reply(event, "**PocongUserbot Berhasil di Restart**")
+    await edit_or_reply(event, "**OuraUserbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**PocongUserbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**OuraUserbot Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -88,7 +88,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Userbot Repo](https://github.com/poocong/PocongUserbot/blob/PocongUserbot/README.md)"
+        "\n┌❏ [Userbot Repo](https://github.com/Oura-Ubot/OuraUserbot/blob/OuraUserbot/README.md)"
         "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
@@ -111,12 +111,12 @@ async def repeat(event):
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **PocongUserbot** \n\n"
+        f"**Hey**, Saya Menggunakan  **OuraUserbot** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [PocongUserbot](t.me/Poconguserbot)\n"
-        f"├❏ **Channel  :** [PocongProject](t.me/Poocongonlen)\n"
-        f"├❏ **OwnerRepo :** [PocongOnlen](t.me/Pocongonlen)\n"
-        f"└❏ **Repo :** [PocongUserbot](https://github.com/poocong/PocongUserbot)\n"
+        f"├❏ **GroupSupport :** [OuraUsernot](t.me/Poconguserbot)\n"
+        f"├❏ **Channel  :** [OuraUserbot](t.me/Poocongonlen)\n"
+        f"├❏ **OwnerRepo :** [OuraUserbot](t.me/Pocongonlen)\n"
+        f"└❏ **Repo :** [OuraUserbot](https://github.com/poocong/PocongUserbot)\n"
     )
 
 
