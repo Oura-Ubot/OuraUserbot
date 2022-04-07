@@ -168,7 +168,7 @@ async def amireallyalive(alive):
     user = await alive.client.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[Pocong Userbot](https://github.com/poocong/PocongUserbot) Telah Di Aktifkan.**\n\n"
+        f"**[Oura Userbot](https://github.com/Oura-Ubot/OuraUserbot) Telah Di Aktifkan.**\n\n"
         
         f"┌ **😈Master :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"├ **📂Modules :** `{len(modules)} Modules` \n"
@@ -177,7 +177,7 @@ async def amireallyalive(alive):
         f"├ **👾TelethonVersion :** `{version.__version__}` \n"
         f"├ **{emoji}Pytgcalls Version :** `{pytgcalls.__version__}` \n"
         f"└ **⏳BotUptime :** `{uptime}` \n\n"
-        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/{GROUP})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/{CHANNEL})** | **[𝗢𝘄𝗻𝗲𝗿](https://t.me/pocongonlen)**"
+        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/{GROUP})** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/{CHANNEL})** | **[𝗢𝘄𝗻𝗲𝗿](https://t.me/Owaitingforyou)**"
     )
     if ALIVE_LOGO:
         try:
