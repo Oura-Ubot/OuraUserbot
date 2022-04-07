@@ -1,6 +1,6 @@
 # Coded by KenHV
 # FORM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
-# ReCode by @pocongonlen
+# ReCode by @OuraCakep
 
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.photos import DeletePhotosRequest, UploadProfilePhotoRequest
@@ -18,13 +18,13 @@ if not hasattr(STORAGE, "userObj"):
 @poci_cmd(pattern="clone ?(.*)")
 async def impostor(event):
     inputArgs = event.pattern_match.group(1)
-    xx = await edit_or_reply(event, "`Processing...`")
+    xx = await edit_or_reply(event, "`Otw Nyamar Jadi Anak Haram...`")
     if "restore" in inputArgs:
-        await event.edit("**Kembali ke identitas asli...**")
+        await event.edit("**`Kembali Jadi Anak Shaleh...`**")
         if not STORAGE.userObj:
-            return await xx.edit("**Anda harus mengclone orang dulu sebelum kembali!**")
+            return await xx.edit("**`Masih Jadi Anak Shaleh, Clone Dulu Anak Haramnya!!!**")
         await updateProfile(event, STORAGE.userObj, restore=True)
-        return await xx.edit("**Berhasil Mengembalikan Akun Anda dari clone**")
+        return await xx.edit("**`Berhasil Menjadi Jadi Anak Shaleh Kembali...🐣`**")
     if inputArgs:
         try:
             user = await event.client.get_entity(inputArgs)
@@ -35,21 +35,21 @@ async def impostor(event):
         replyMessage = await event.get_reply_message()
         if replyMessage.sender_id in DEVS:
             return await xx.edit(
-                "**Tidak dapat menyamar sebagai developer PocongUserbot 😡**"
+                "**`Ampe Kiamat Juga Ga Akan Bisa Gblk Lu Clone Tuhan Lu Sendiri!!!😡`**"
             )
         if replyMessage.sender_id is None:
-            return await xx.edit("**Tidak dapat menyamar sebagai admin anonim 🥺**")
+            return await xx.edit("**`Ga Bakal Bisa Gblkkk Nyamar Jadi Admin Anonim Mah Tolol 😭`**")
         userObj = await event.client(GetFullUserRequest(replyMessage.sender_id))
     else:
-        return await xx.edit("**Ketik** `.help clone` **bila butuh bantuan.**")
+        return await xx.edit("**Ketik** `.help clone` **Kalo Mau Cosplay Jadi Anak Haram.**")
 
     if not STORAGE.userObj:
         STORAGE.userObj = await event.client(GetFullUserRequest(event.sender_id))
 
     LOGS.info(STORAGE.userObj)
-    await xx.edit("**Mencuri identitas orang ini...**")
+    await xx.edit("**Otw Nyamar Jadi Anak Haram...**")
     await updateProfile(event, userObj)
-    await xx.edit("**Aku adalah kamu dan kamu adalah aku. asekk 🥴**")
+    await xx.edit("**`Horeee Berhasil... Aku Anak Haram Dan Kamu Anak Anjing... 😙**")
 
 
 async def updateProfile(event, userObj, restore=False):
