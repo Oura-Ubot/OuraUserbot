@@ -22,7 +22,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(asupannya),
-            caption=f"nih asupan biar ga lemess 🥵",
+            caption=f"𝙉𝙞𝙝 𝘼𝙨𝙪𝙥𝙖𝙣 𝘽𝙪𝙖𝙩 𝙇𝙪 𝙔𝙖𝙣𝙜 𝙇𝙖𝙜𝙞 𝙎𝙖𝙣𝙜𝙚...🥵",
         )
         await event.delete()
     except Exception:
@@ -42,7 +42,7 @@ async def _(event):
         await event.client.send_file(
             event.chat_id,
             file=random.choice(wibukntl),
-            caption=f"nih buat lo vvibu bau bawang",
+            caption=f"𝙒𝙞𝙗𝙪𝙪 𝙆𝙤𝙣𝙩𝙤𝙡 𝘽𝙖𝙪 𝘽𝙖𝙬𝙖𝙣𝙜𝙜 𝙖𝙬𝙠𝙬𝙠𝙬𝙠...🤪",
         )
         await event.delete()
     except Exception:
