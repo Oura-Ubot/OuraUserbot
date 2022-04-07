@@ -16,12 +16,12 @@ from userbot.events import poci_cmd
 from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
-    "❏ 𝐏𝐞𝐫𝐢𝐧𝐠𝐚𝐭𝐚𝐧!\n"
-    "• Saya belum menyetujui anda untuk Cht.\n"
-    "• Tunggu sampai sy menyetujui chat anda.\n"
-    "• Jangan Spam Chat atau anda akan otomatis di blokir.\n"
+    "❀ 𝐁𝐚𝐜𝐚 𝐘𝐚 𝐆𝐛𝐥𝐤!\n"
+    "• Gua Lagi Sibuk Kntl!!.\n"
+    "• Tunggu Gua Acc Ya Anak Haram😙.\n"
+    "• Gausah Spam² Kek Jamet, Nanti Gua Block Lu!!.\n"
     "┌━━━━━━━━━━━━\n"
-    "├❏ 𝐏𝐞𝐬𝐚𝐧 𝐨𝐭𝐨𝐦𝐚𝐭𝐢𝐬 𝐁𝐲 𝐏𝐨𝐜𝐨𝐧𝐠𝐔𝐬𝐞𝐫𝐛𝐨𝐭\n"
+    "├❏ 𝐏𝐞𝐬𝐚𝐧 𝐨𝐭𝐨𝐦𝐚𝐭𝐢𝐬 𝐁𝐲 𝐁𝐨𝐭-𝐎𝐮𝐫𝐚\n"
     "└━━━━━━━━━━━━\n"
 )
 
@@ -78,7 +78,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > PM_LIMIT:
                 await event.respond(
-                    "**Maaf Anda Telah Di Blokir Karna Melakukan Spam Chat**"
+                    "**`𝙈𝙖𝙢𝙥𝙪𝙨 𝙂𝙪𝙖 𝘽𝙡𝙤𝙘𝙠,𝙇𝙖𝙜𝙞𝙖𝙣 𝙈𝙖𝙡𝙖𝙝 𝙎𝙥𝙖𝙢 𝙅𝙖𝙢𝙚𝙩...`**"
                 )
 
                 try:
@@ -105,7 +105,7 @@ async def permitpm(event):
                         + "](tg://user?id="
                         + str(event.chat_id)
                         + ")"
-                        + " **Telah Diblokir Karna Melakukan Spam Ke Room Chat**",
+                        + " **`𝙈𝙖𝙢𝙥𝙪𝙨 𝙆𝙚𝙣𝙖 𝘽𝙡𝙤𝙠𝙞𝙧, 𝙈𝙖𝙠𝙖𝙣𝙮𝙖 𝙂𝙖𝙪𝙨𝙖𝙝 𝘼𝙡𝙖𝙞 𝙉𝙜𝙚𝙣𝙩𝙤𝙩`**",
                     )
 
 
@@ -239,10 +239,10 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await edit_delete(apprvpm, "**Pesan Anda Sudah Diterima**")
+        return await edit_delete(apprvpm, "**`𝙐𝙙𝙖𝙝 𝙂𝙪𝙖 𝘼𝙘𝙘 𝙔𝙖 𝙉𝙜𝙚𝙣𝙩𝙤𝙩𝙩𝙩`**")
 
     await edit_delete(
-        apprvpm, f"**Menerima Pesan Dari** [{name0}](tg://user?id={uid})", 5
+        apprvpm, f"**`𝙐𝙙𝙖𝙝 𝙂𝙪𝙖 𝘼𝙘𝙘 𝙔𝙖 𝙉𝙜𝙚𝙣𝙩𝙤𝙩𝙩𝙩`** [{name0}](tg://user?id={uid})", 5
     )
 
     if BOTLOG:
@@ -328,7 +328,7 @@ async def blockpm(block):
         aname = await block.client.get_entity(block.chat_id)
         if not isinstance(aname, User):
             return await block.edit("**This can be done only with users.**")
-        await block.edit("**Kamu Telah Diblokir!**")
+        await block.edit("**`𝙋𝙚𝙧𝙜𝙞 𝙎𝙖𝙣𝙖 𝙉𝙜𝙚𝙣𝙩𝙤𝙩𝙩𝙩, 𝘽𝙮𝙚...`**")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
