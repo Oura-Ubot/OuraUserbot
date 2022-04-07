@@ -20,7 +20,7 @@ async def help(event):
         if args in CMD_HELP:
             await edit_or_reply(event, str(CMD_HELP[args]))
         else:
-            await edit_delete(event, f"`{args}` **Module yang lu cari gada tod.**")
+            await edit_delete(event, f"`{args}` **Module yang lu cari gada Ngentottt...**")
     else:
         user = await event.client.get_me()
         string = ""
@@ -29,7 +29,7 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**✦ Daftar Perintah [PocongUserbot](https://github.com/poocong/PocongUserbot):**\n"
+            f"**✦ Daftar Perintah [OuraUserbot](https://github.com/Oura-Ubot/OuraUserbot):**\n"
             f"**✦ Jumlah** `{len(modules)}` **Modules**\n"
             f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
