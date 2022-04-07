@@ -4,7 +4,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 # Copyright by @mrismanaziz
-# Recode by @pocongonlen
+# Recode by @OuraCakep
 
 import asyncio
 
@@ -17,12 +17,12 @@ from userbot.utils import edit_delete, edit_or_reply, poci_cmd
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/poocong/darkweeb/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/Oura-Ubot/darkweeb/master/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001267233272, -1001473548283]
+        GCAST_BLACKLIST = [-1001267233272, -1001473548283, -1001217578068, -1001704645461]
         break
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
@@ -38,8 +38,8 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await edit_or_reply(event, "`Globally Broadcasting Msg...`")
+        return await edit_delete(event, "**𝘽𝙞𝙨𝙖 𝙉𝙜𝙚𝙩𝙞𝙠 𝙔𝙖𝙣𝙜 𝘽𝙚𝙣𝙚𝙧 𝙂𝙖 𝙉𝙜𝙚𝙣𝙩𝙤𝙩𝙩𝙩...**")
+    kk = await edit_or_reply(event, "`𝙔𝙪𝙝𝙪 𝙈𝙚𝙡𝙪𝙣𝙘𝙪𝙧... 𝙎𝙖𝙗𝙖𝙧 𝙔𝙖 𝙉𝙜𝙚𝙣𝙩𝙤𝙩𝙩𝙩 𝙇𝙖𝙜𝙞 𝙂𝙪𝙖 𝙎𝙚𝙗𝙖𝙧 𝘽𝙤𝙠𝙚𝙥𝙣𝙮𝙖, 𝙈𝙤𝙜𝙖 𝙇𝙞𝙢𝙞𝙩 𝙔𝙖 𝘼𝙣𝙟𝙚𝙣𝙜...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -57,7 +57,7 @@ async def gcast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**𝘼𝙇𝙃𝘼𝙈𝘿𝙐𝙇𝙄𝙇𝙇𝘼𝙃 𝘽𝙊𝙆𝙀𝙋 𝙆𝙀 𝙎𝙀𝘽𝘼𝙍 𝘿𝙄 ** `{done}` **𝙂𝙍𝙊𝙐𝙋, 𝘿𝙄 𝙏𝙊𝙇𝘼𝙆 𝘼𝘿𝙈𝙄𝙉 𝘼𝙉𝙅𝙄𝙉𝙂 𝘿𝙄 ** `{er}` **𝙂𝙍𝙊𝙐𝙋**"
     )
 
 
@@ -69,8 +69,8 @@ async def gucast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
-    kk = await edit_or_reply(event, "`Globally Broadcasting Msg...`")
+        return await edit_delete(event, "**𝘼𝙡𝙖𝙞 𝙇𝙪 𝙂𝙪𝙘𝙖𝙨𝙩² 𝙆𝙚𝙠 𝙅𝙖𝙢𝙚𝙩...**")
+    kk = await edit_or_reply(event, "`𝙎𝙖𝙗𝙖𝙧𝙧... 𝙊𝙏𝙒 𝙆𝙞𝙧𝙞𝙢 𝙋𝙖𝙥 𝙏𝙏 𝙆𝙚 𝘿𝙊𝙄...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -88,7 +88,7 @@ async def gucast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{er}` **chat**"
+        f"**𝙏𝙀𝙍𝙆𝙄𝙍𝙄𝙈 𝙆𝙀 𝙒𝘼𝙍𝙂𝘼 𝙎𝘼𝙉𝙂𝙀** `{done}` **𝘾𝙃𝘼𝙏, 𝙂𝘼𝙂𝘼𝙇 𝙒𝘼𝙍𝙂𝘼 𝙎𝙐𝘿𝘼𝙃 𝙈𝙀𝙉𝙄𝙉𝙂𝙂𝘼𝙇** `{er}` **𝘾𝙃𝘼𝙏**"
     )
 
 
