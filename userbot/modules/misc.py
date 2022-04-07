@@ -3,7 +3,7 @@
 # you may not use this file except in compliance with the License.
 # You can find misc modules, which dont fit in anything xD
 # Copyright (C) 2022 @mrismanaziz
-# ReCode by @Pocongonlen
+# ReCode by @OuraCakep
 
 import io
 import os
@@ -61,7 +61,7 @@ async def shutdown_bot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**PocongUserbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**OuraUserbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
     await edit_or_reply(event, "**OuraUserbot Berhasil di matikan!**")
     if HEROKU_APP is not None:
@@ -88,8 +88,8 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Userbot Repo](https://github.com/Oura-Ubot/OuraUserbot/blob/OuraUserbot/README.md)"
-        "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
+        "\n┌❀ [Userbot Repo](https://github.com/Oura-Ubot/OuraUserbot/blob/OuraUserbot/README.md)"
+        "\n└❀ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
 
@@ -112,11 +112,11 @@ async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
         f"**Hey**, Saya Menggunakan  **OuraUserbot** \n\n"
-        f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [OuraUsernot](t.me/Poconguserbot)\n"
-        f"├❏ **Channel  :** [OuraUserbot](t.me/Poocongonlen)\n"
-        f"├❏ **OwnerRepo :** [OuraUserbot](t.me/Pocongonlen)\n"
-        f"└❏ **Repo :** [OuraUserbot](https://github.com/poocong/PocongUserbot)\n"
+        f"┌❀ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
+        f"├❀ **GroupSupport :** [OuraUserbot](t.me/OuraaSupport)\n"
+        f"├❀ **Channel  :** [OuraUserbot](t.me/OuraaProject)\n"
+        f"├❀ **OwnerRepo :** [OuraUserbot](t.me/Owaitingforyou)\n"
+        f"└❀ **Repo :** [OuraUserbot](https://github.com/Oura-Ubot/OuraUserbot)\n"
     )
 
 
@@ -125,10 +125,10 @@ async def string_is_here(event):
     await edit_or_reply(
         event,
         "**List Bot**\n"
-        "\n┌❏ **GET STRING BOT:**"
-        "\n├❏ [[ KLIK DISINI ]](https://t.me/StringPocongBot)"
-        "\n├❏ **GET API ID & API HASH :**"
-        "\n└❏ [[ KLIK DISINI ]](https://t.me/pocongscrapbot)",
+        "\n┌❀ **GET STRING BOT:**"
+        "\n├❀ [[ KLIK DISINI ]](https://t.me/OuraStringBot)"
+        "\n├❀ **GET API ID & API HASH :**"
+        "\n└❀ [[ TANYAKAN KE ]](https://t.me/Owaitingforyou)",
     )
 
 
@@ -294,11 +294,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository PocongUserbot`\
+        "repo": f"**Plugin : **`Repository OuraUserbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository PocongUserbot\
+        \n  •  **Function : **Menampilan link Repository OuraUserbot\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String PocongUserbot\
+        \n  •  **Function : **Menampilan link String OuraUserbot\
     "
     }
 )
@@ -322,7 +322,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}shutdown`\
         \n  •  **Function : **Mematikan Userbot.\
         \n\n  •  **Syntax :** `{cmd} sleep`\
-        \n  •  **Function : **Biarkan PocongUserbot tidur selama waktu yg ditetapkan.\
+        \n  •  **Function : **Biarkan OuraUserbot tidur selama waktu yg ditetapkan.\
     "
     }
 )
