@@ -72,7 +72,7 @@ async def locks(event):
         what = "Semuanya"
     else:
         if not input_str:
-            await edit_or_reply(event, "**Apa Yang Harus Saya Kunci?**")
+            await edit_or_reply(event, "**APA YANG MAU DI KUNCI GOBLOK!!!**")
         else:
             await edit_or_reply(
                 event, f"**Jenis Yang Mau Anda Kunci Tidak Valid** `{input_str}`"
@@ -96,7 +96,7 @@ async def locks(event):
             EditChatDefaultBannedRightsRequest(peer=peer_id, banned_rights=lock_rights)
         )
         await edit_or_reply(
-            event, f"**{owner} Telah Mengunci {what} Untuk Obrolan Ini!!**"
+            event, f"**{owner} UDAH GUA LOCK MEMEK!!! {what} YAHAHA GABISA TYPING YAK??**"
         )
     except BaseException as e:
         await edit_or_reply(event, f"**ERROR:** {e}")
@@ -163,7 +163,7 @@ async def rem_locks(event):
         what = "Semuanya"
     else:
         if not input_str:
-            await edit_or_reply(event, "**Apa Yang Harus Saya Buka?**")
+            await edit_or_reply(event, "**MAU APA YANG DI BUKA NGENTOTTT??**")
         else:
             await edit_or_reply(
                 event, f"**Jenis Kunci Yang Mau Anda Buka Tidak Valid** `{input_str}`"
@@ -189,7 +189,7 @@ async def rem_locks(event):
             )
         )
         await edit_or_reply(
-            event, f"**{owner} Telah Membuka Kunci {what} Untuk Obrolan Ini!!**"
+            event, f"**{owner} UDAH GUA BUKA CELANANYA {what} WAKTUNYA NGEWE BERJAMAAH...**"
         )
     except BaseException as e:
         await edit_or_reply(event, f"**ERROR:** {e}")
