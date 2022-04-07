@@ -25,7 +25,7 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(event, ac_br, changelog):
     changelog_str = (
-        f"**✥ Tersedia Pembaruan Untuk [{ac_br}] :\n\n✥ Pembaruan:**\n`{changelog}`"
+        f"**❀ Tersedia Pembaruan Untuk [{ac_br}] :\n\n❀ Pembaruan:**\n`{changelog}`"
     )
     if len(changelog_str) > 4096:
         await event.edit("**Changelog terlalu besar, dikirim sebagai file.**")
@@ -90,7 +90,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            "`PocongUserbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+            "`OuraUserbot Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
         )
 
     else:
@@ -105,7 +105,7 @@ async def update(event, repo, ups_rem, ac_br):
         ups_rem.pull(ac_br)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
-    await event.edit("`OuraUserbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`")
+    await event.edit("`OuraUserbot Berhasil Diupdate Tod! Silahkan Menjamet Kembali...`")
 
     try:
         from userbot.modules.sql_helper.globals import addgvar, delgvar
@@ -164,12 +164,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await event.edit("`[HEROKU]: Update Deploy OuraUserbot Sedang Dalam Proses...`")
+        await event.edit("`[HEROKU]: Update Deploy OuraUserbot Lagi Proses Ya Ngentottt...`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await event.edit("**⚡ OuraUserbot Sudah Versi Terbaru**")
+        await event.edit("**🐣 OuraUserbot Udah Versi Terbaru Goblok☺**")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
