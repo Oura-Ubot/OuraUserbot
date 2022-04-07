@@ -1,6 +1,6 @@
 # Copyright (C) 2022 Man-Userbot
-# PocongUserbot < https://github.com/poocong/PocongUserbot
-# Recode by @pocongonlen
+# OuraUserbot < https://github.com/Oura-Ubot/OuraUserbot
+# Recode by @OuraCakep
 
 import asyncio
 from datetime import datetime
