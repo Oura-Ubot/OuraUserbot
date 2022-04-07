@@ -71,7 +71,7 @@ async def _(typew):
       
 CMD_HELP.update(
     {
-        "animasi5": f"**Plugin : **`animasi5`\
+        "animasi3": f"**Plugin : **`animasi3`\
         \n\n  •  **Syntax :** `{cmd}thanks`\
         \n  •  **Function : **Mengirim Gambar Thank You.\
         \n\n  •  **Syntax :** `{cmd}malam`\
