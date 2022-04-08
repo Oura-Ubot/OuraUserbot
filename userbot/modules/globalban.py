@@ -1,6 +1,6 @@
 # Copyright (C) 2020 Catuserbot <https://github.com/sandy1709/catuserbot>
 # Copyright (C) 2022 Man-Userbot
-# Recode by @Pocongonlen
+# Recode by @OuraCakep
 
 import asyncio
 from datetime import datetime
@@ -42,20 +42,20 @@ def mentionuser(name, userid):
 async def gban(event):
     if event.fwd_from:
         return
-    gbun = await edit_or_reply(event, "`Gbanning...`")
+    gbun = await edit_or_reply(event, "`Memanggil malaikat izrail...`")
     start = datetime.now()
     user, reason = await get_user_from_event(event, gbun)
     if not user:
         return
     if user.id == (await event.client.get_me()).id:
-        await gbun.edit("**Ngapain NgeGban diri sendiri Goblok 🐽**")
+        await gbun.edit("**`Kaga Bisa Gban Diri Sendiri Ngentot... Lu Shaleh Goblok...`**")
         return
     if user.id in DEVS:
-        await gbun.edit("**Gagal GBAN karena dia adalah Pembuat saya 🗿**")
+        await gbun.edit("**`Ngapain Lu Gban LORD Gua Kontol... Yang Ada Akun Lu Ke DEAK...`**")
         return
     if gban_sql.is_gbanned(user.id):
         await gbun.edit(
-            f"**Si** [Caper](tg://user?id={user.id}) **Goblok ini sudah ada di daftar gbanned**"
+            f"**Si** [Caper](tg://user?id={user.id}) **`Mau GBAN Apa Lagi Ngentot...**"
         )
     else:
         gban_sql.freakgban(user.id, reason)
@@ -96,7 +96,7 @@ async def gban(event):
 async def ungban(event):
     if event.fwd_from:
         return
-    ungbun = await edit_or_reply(event, "`UnGbanning...`")
+    ungbun = await edit_or_reply(event, "`Anak Haram Keluar Dari Neraka Jahannam...")
     start = datetime.now()
     user, reason = await get_user_from_event(event, ungbun)
     if not user:
@@ -155,7 +155,7 @@ async def gablist(event):
                     f"👉 [{a_user.chat_id}](tg://user?id={a_user.chat_id}) `No Reason`\n"
                 )
     else:
-        GBANNED_LIST = "Belum ada Pengguna yang Di-Gban"
+        GBANNED_LIST = "`Malaikat Izrail Belum Menemukan Target...`"
     await edit_or_reply(event, GBANNED_LIST)
 
 
