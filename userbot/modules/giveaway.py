@@ -100,7 +100,7 @@ async def _(event):
 
 @poci_cmd(pattern="ss(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**`𝙈𝘼𝙆𝘼𝙉𝙂𝘼 𝙂𝘾𝘼𝙎𝙏 𝙆𝙊𝙉𝙏𝙊𝙇𝙇𝙇...`**")
+    await edit_or_reply(event, "**`𝙈𝘼𝙆𝘼𝙉𝙉𝙔𝘼 𝙂𝘾𝘼𝙎𝙏 𝙆𝙊𝙉𝙏𝙊𝙇𝙇𝙇...`**")
 
 
 @poci_cmd(pattern="clue(?: |$)(.*)")
