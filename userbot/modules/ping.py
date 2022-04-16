@@ -16,6 +16,19 @@ absen = [
     "**Hadir Ganteng** 😍",
 ]
 
+oura = [
+    "**Hai Oura Sayang Ku**💓",
+    "**Oura Dateng Sambut Bego**",
+    "**Kenalin Nih Lord Gue Oura**",
+]
+
+
+lepin = [
+     "**Hai Mas Ganteng**😍"
+     "**Eh Pacar Aku Lepin**❤️",
+     "**Hai Sayang Ku Lepin**",
+]
+
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
@@ -114,6 +127,18 @@ async def pocong(ganteng):
 @register(pattern=r"^\.absen$", own=True)
 async def _(event):
     await event.reply(choice(absen))
+
+
+@register(pattern=r"^\.oura$", own=True)
+async def _(event):
+    await event.reply(choice(oura))
+
+
+@register(pattern=r"^\.lepin$", own=True)
+async def _(event):
+    await event.reply(choice(lepin))
+
+
 
 CMD_HELP.update(
     {
