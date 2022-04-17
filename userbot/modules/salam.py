@@ -9,7 +9,7 @@ from userbot.utils import edit_or_reply, poci_cmd
 async def _(event):
     await event.client.send_message(
         event.chat_id,
-        "**Assalamualaikum Dulu Biar Sopan**",
+        "**𝘼𝙎𝙎𝘼𝙇𝘼𝙈𝙐'𝘼𝙇𝘼𝙄𝙆𝙐𝙈 𝘿𝙐𝙇𝙐 𝙉𝙂𝙀𝙉𝙏𝙊𝙏𝙏𝙏**",
         reply_to=event.reply_to_msg_id,
     )
     await event.delete()
@@ -17,24 +17,24 @@ async def _(event):
 
 @poci_cmd(pattern="P(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, f"**Hy kaa 🥺**")
+    xx = await edit_or_reply(event, f"**𝘼𝙇𝙇𝙊 𝙎𝘼𝙔𝘼𝙉𝙂...🥺**")
     sleep(2)
-    await xx.edit("**Assalamualaikum...**")
+    await xx.edit("**𝘼𝙎𝙎𝘼𝙇𝘼𝙈𝙐'𝘼𝙇𝘼𝙄𝙆𝙐𝙈...𝙂𝘼 𝙅𝘼𝙒𝘼𝘽 𝙋𝙆𝙄**")
 
 
 @poci_cmd(pattern="l(?: |$)(.*)")
 async def _(event):
     await event.client.send_message(
-        event.chat_id, "**Wa'alaikumsalam**", reply_to=event.reply_to_msg_id
+        event.chat_id, "**𝙒𝘼'𝘼𝙇𝘼𝙄𝙆𝙐𝙈𝙎𝘼𝙇𝘼𝙈 𝘼𝙉𝙅𝙄𝙉𝙂...**", reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
 
 @poci_cmd(pattern="L(?: |$)(.*)")
 async def _(event):
-    xx = await edit_or_reply(event, f"**Astaghfirullah, Jawab salam dong**")
+    xx = await edit_or_reply(event, f"**𝘼𝙎𝙏𝘼𝙂𝘼𝙔... 𝙂𝘼 𝙅𝘼𝙒𝘼𝘽 𝙋𝙆𝙄**")
     sleep(2)
-    await xx.edit("**Wa'alaikumsalam**")
+    await xx.edit("**𝙒𝘼'𝘼𝙇𝘼𝙄𝙆𝙐𝙈𝙎𝘼𝙇𝘼𝙈 𝙅𝘼𝙉𝘾𝙊𝙆...**")
 
 
 
