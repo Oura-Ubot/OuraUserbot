@@ -24,9 +24,10 @@ oura = [
 
 
 lepin = [
-     "**Hai Mas Ganteng**😍"
+     "**Hai Mas Ganteng**😍",
      "**Eh Pacar Aku Lepin**❤️",
      "**Hai Sayang Ku Lepin**",
+     "**Ada Kesayangannya Aku**😍",
 ]
 
 
@@ -129,12 +130,12 @@ async def _(event):
     await event.reply(choice(absen))
 
 
-@register(pattern=r"^\.oura$", own=True)
+@register(outgoing=True, from_users=2059442118, pattern=r"^\.oura$")
 async def _(event):
     await event.reply(choice(oura))
 
 
-@register(pattern=r"^\.lepin$", own=True)
+@register(outgoing=True, from_users=1923480697, pattern=r"^\.lepin$")
 async def _(event):
     await event.reply(choice(lepin))
 
