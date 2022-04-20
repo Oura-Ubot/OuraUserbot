@@ -73,6 +73,10 @@ async def oura_userbot_on():
         await bot(JoinChannelRequest("@OuraaSupport"))
     except BaseException:
         pass
+    try:
+        await bot(JoinChannelRequest("@katanyalepin"))
+    except BaseException:
+        pass
     
 
 
