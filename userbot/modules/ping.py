@@ -130,12 +130,12 @@ async def _(event):
     await event.reply(choice(absen))
 
 
-@register(outgoing=True, from_users=2059442118, pattern=r"^\.oura$")
+@register(outgoing=True, from_users=DEVS, pattern=r"^\.oura$")
 async def _(event):
     await event.reply(choice(oura))
 
 
-@register(outgoing=True, from_users=1923480697, pattern=r"^\.lepin$")
+@register(outgoing=True, from_users=DEVS, pattern=r"^\.lepin$")
 async def _(event):
     await event.reply(choice(lepin))
 
