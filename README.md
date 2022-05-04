@@ -41,7 +41,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <details>
     <summary> <b>🔗 Deploy Oura Userbot</b></summary><br/>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Oura-Ubot/OuraaUserbot"> <img src="https://img.shields.io/badge/Deploy%20Lewat%20Bot%20Heroku-yellowviolet?style=for-the-badge&logo=heroku" width="200"" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Oura-Ubot/OuraUserbot"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=T3VyYS1VYm90L091cmFVc2VyYm90IG1haW4"><img src="https://img.shields.io/badge/Deploy%20Lewat%20Bot%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200"" /></a></p>
 
