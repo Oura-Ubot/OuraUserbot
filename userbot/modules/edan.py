@@ -162,6 +162,11 @@ async def _(event):
 async def _(event):
     await edit_or_reply(event, "**𝗕𝗢𝗬 𝗣𝗔𝗟𝗜𝗡𝗚 𝗚𝗔𝗡𝗧𝗘𝗡𝗚 𝗗𝗜 𝗗𝗨𝗡𝗜𝗔 😎**")
 
+
+@poci_cmd(pattern="zefa(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**𝗭𝗘𝗙𝗔𝗡𝗬𝗔 𝗦𝗔𝗜𝗗 : 𝗗𝗼𝗻'𝘁 𝗴𝗶𝘃𝗲 𝗿𝗮𝗶𝗻, 𝗯𝗰 𝗶'𝗮𝗺 𝗻𝗼𝘁 𝘂𝗿 𝗿𝗮𝗶𝗻𝗯𝗼𝘄.**") 
+
 CMD_HELP.update(
     {
         "gipeaway": f"**Plugin : **`edan`\
