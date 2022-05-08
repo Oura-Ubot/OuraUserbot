@@ -140,8 +140,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "gipeaway": f"**Plugin : **`gabutan2`\
+        "gabutan2": f"**Plugin : **`gabutan2`\
         \n\nㅤㅤ•**Syntax** : {cmd}a-z\
-        \n•**Function : **Kata-Kata buat orang edan\
+        \n•**Function : **Kata-Kata buat orang stres\
     "
     })
