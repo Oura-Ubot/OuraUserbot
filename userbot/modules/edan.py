@@ -153,6 +153,11 @@ async def _(event):
     await edit_or_reply(event, "**𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗢𝗥𝗗𝗘𝗥 𝗣𝗣 𝗞𝗘 @Papoylz 𝗬𝗔 𝗦𝗔𝗬𝗔𝗡𝗚... 😇**")
 
 
+@poci_cmd(pattern="thy(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**𝗕𝗧𝗣𝗠 𝗖𝗛 𝗞𝗔𝗞 𝗣𝗖 @hobycuddle**")
+
+
 CMD_HELP.update(
     {
         "gipeaway": f"**Plugin : **`edan`\
