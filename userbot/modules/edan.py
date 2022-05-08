@@ -158,6 +158,10 @@ async def _(event):
     await edit_or_reply(event, "**𝗕𝗧𝗣𝗠 𝗖𝗛 𝗞𝗔𝗞 𝗣𝗖 @hobycuddle**")
 
 
+@poci_cmd(pattern="boyy(?: |$)(.*)")
+async def _(event):
+    await edit_or_reply(event, "**𝗕𝗢𝗬 𝗣𝗔𝗟𝗜𝗡𝗚 𝗚𝗔𝗡𝗧𝗘𝗡𝗚 𝗗𝗜 𝗗𝗨𝗡𝗜𝗔 😎**")
+
 CMD_HELP.update(
     {
         "gipeaway": f"**Plugin : **`edan`\
