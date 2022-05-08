@@ -8,7 +8,7 @@ from userbot import CMD_HELP
 from userbot.utils import edit_or_reply, poci_cmd
 
 
-@poci_cmd(pattern="xy(?: |$)(.*)")
+@poci_cmd(pattern="xyy(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "**𝗚𝗔𝗨𝗦𝗔𝗛 𝗦𝗢𝗞 𝗞𝗘𝗥𝗘𝗡 𝗟𝗢 𝗡𝗚𝗘𝗡𝗧𝗢𝗧𝗧!! 𝗕𝗔𝗣𝗔𝗞 𝗟𝗨 𝗚𝗨𝗔 𝗜𝗡𝗝𝗘𝗞² 𝗣𝗔𝗟𝗔𝗡𝗬𝗔 𝗔𝗠𝗣𝗘 𝗔𝗡𝗖𝗨𝗥 𝗡𝗔𝗡𝗧𝗜!!!**")
 
