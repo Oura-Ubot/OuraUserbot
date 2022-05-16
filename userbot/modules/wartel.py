@@ -25,7 +25,7 @@ async def _(event):
 
 @poci_cmd(pattern="vyori(?: |$)(.*)")
 async def _(event):
-    await edit_or_reply(event, "**`𝙉𝙂𝙂𝘼 𝙐𝘿𝘼𝙃 𝙆𝙀𝙋𝙊, 𝙁𝙊𝙇𝙇𝙊𝙒 𝘼𝙅𝘼 @ALYCIAA_028`**") 
+    await edit_or_reply(event, "**`𝙉𝙂𝙂𝘼 𝙐𝙎𝘼𝙃 𝙆𝙀𝙋𝙊, 𝙈𝙀𝙉𝘿𝙄𝙉𝙂 𝙁𝙊𝙇𝙇𝙊𝙒 𝙄𝙂 𝘼𝙅𝘼 @alyciaa_028`**") 
 
 CMD_HELP.update(
     {
